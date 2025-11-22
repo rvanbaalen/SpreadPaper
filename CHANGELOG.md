@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/rvanbaalen/SpreadPaper/compare/v1.1.0...v1.1.1) (2025-11-22)
+
+
+### Bug Fixes
+
+* unify release workflow and fix DMG upload permissions ([#5](https://github.com/rvanbaalen/SpreadPaper/issues/5)) ([f472fa8](https://github.com/rvanbaalen/SpreadPaper/commit/f472fa8691191d12cc131fbb43b9825df61d1e7e))
+
 ## [1.1.0](https://github.com/rvanbaalen/SpreadPaper/compare/v1.0.1...v1.1.0) (2025-11-22)
 
 
