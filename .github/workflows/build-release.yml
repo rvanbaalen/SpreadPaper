@@ -1,0 +1,49 @@
+name: Build and Release
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Select Xcode version
+        run: sudo xcode-select -s /Applications/Xcode_15.2.app/Contents/Developer
+
+      - name: Build app
+        run: |
+          xcodebuild -project SpreadPaper.xcodeproj \
+            -scheme SpreadPaper \
+            -configuration Release \
+            -derivedDataPath build \
+            -arch arm64 -arch x86_64 \
+            CODE_SIGN_IDENTITY="-" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Create DMG
+        run: |
+          # Create a temporary directory for DMG contents
+          mkdir -p dmg_temp
+          cp -r build/Build/Products/Release/SpreadPaper.app dmg_temp/
+
+          # Create symlink to Applications folder
+          ln -s /Applications dmg_temp/Applications
+
+          # Create DMG
+          hdiutil create -volname "SpreadPaper" \
+            -srcfolder dmg_temp \
+            -ov -format UDZO \
+            SpreadPaper.dmg
+
+      - name: Upload DMG to release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: SpreadPaper.dmg
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
