@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.2](https://github.com/rvanbaalen/SpreadPaper/compare/v1.1.1...v1.1.2) (2025-11-22)
+
+
+### Bug Fixes
+
+* punctuation in README ([9d410ec](https://github.com/rvanbaalen/SpreadPaper/commit/9d410ec4d6777f9ecf09e61c7a2a730815bfa61e))
+
 ## [1.1.1](https://github.com/rvanbaalen/SpreadPaper/compare/v1.1.0...v1.1.1) (2025-11-22)
 
 
