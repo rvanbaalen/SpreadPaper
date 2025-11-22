@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.1](https://github.com/rvanbaalen/SpreadPaper/compare/v1.0.0...v1.0.1) (2025-11-22)
+
+
+### Bug Fixes
+
+* add release published trigger and manual workflow dispatch ([c5d6935](https://github.com/rvanbaalen/SpreadPaper/commit/c5d6935c42e3af8734877fd9079eb6e7615dc7b5))
+
 ## 1.0.0 (2025-11-22)
 
 
