@@ -112,16 +112,11 @@ open SpreadPaper.xcodeproj
 ## Contributing
 
 Contributions are welcome! Feel free to:
-- Report bugs by [opening an issue](https://github.com/spreadpaper/SpreadPaper/issues)
-- Suggest new features
+- [Download the latest release](https://github.com/spreadpaper/SpreadPaper/releases/latest)
+- [Report bugs](https://github.com/spreadpaper/SpreadPaper/issues)
+- [Request features](https://github.com/spreadpaper/SpreadPaper/issues)
 - Submit pull requests
 
 ## License
 
 SpreadPaper is free and open source software licensed under the [MIT License](LICENSE).
-
----
-
-<div align="center">
-  [Download](https://github.com/spreadpaper/SpreadPaper/releases/latest) • [Report Bug](https://github.com/spreadpaper/SpreadPaper/issues) • [Request Feature](https://github.com/spreadpaper/SpreadPaper/issues)
-</div>
